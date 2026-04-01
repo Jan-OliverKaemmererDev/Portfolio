@@ -1,0 +1,54 @@
+@use '../../../../styles/variables' as *;
+
+section {
+  width: 100%;
+  padding-top: 104px; 
+  overflow: hidden;
+  @include flex-center();
+
+  .privacy_header {
+    margin-bottom: 64px;
+    text-align: center;
+
+    .privacy_title {
+      font-size: 4rem;
+      font-weight: 500;
+      color: $color-accent;
+    }
+  }
+}
+
+.privacy_content {
+  @include flex-column(24px); 
+
+  h2, h3, h4 {
+    font-family: $font-fira;
+    font-weight: 600;
+    color: $color-accent;
+  }
+
+  h2 { 
+    font-size: 2rem; 
+  }
+  h3 { 
+    font-size: 1.5rem; 
+  }
+  h4 { 
+    font-size: 1.25rem; 
+  }
+
+  ul {
+    padding-left: 24px;
+    @include flex-column(8px);
+  }
+
+  a {
+    color: $color-accent;
+    text-decoration: underline;
+    transition: color $defaultDuration ease;
+
+    &:hover {
+      color: white; 
+    }
+  }
+}

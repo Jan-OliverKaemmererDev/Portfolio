@@ -1,0 +1,27 @@
+<svg width="310" height="60" viewBox="0 0 310 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .text {
+        font: 600 42px 'Karla', sans-serif;
+        fill: #FFFFFF;
+        letter-spacing: 1px;
+      }
+      .accent {
+        fill: #3DCFB6;
+      }
+      .line {
+        fill: #FFFFFF;
+      }
+    </style>
+  </defs>
+
+  <!-- Wortmarke -->
+  <text x="0" y="45" class="text">
+    Lucas 
+    <tspan class="accent">&lt;&gt;</tspan>
+    Graf
+  </text>
+
+  <!-- Unterstreichung (nur weiß) -->
+  <rect x="0" y="52" width="310" height="2" class="line"/>
+</svg>

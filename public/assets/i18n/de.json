@@ -1,0 +1,210 @@
+{
+  "NAV": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECTS": "Projekte"
+  },
+  "HERO": {
+    "JOB_TITLE": "Frontend Entwickler",
+    "MY_PROJECTS": "Meine Projekte",
+    "CONTACT_ME": "Kontaktiere mich",
+    "MARQUEE": {
+      "REMOTE_WORK": "Verfügbar für Remote-Arbeit",
+      "JOB_TITLE": "Frontend Entwickler",
+      "LOCATION": "Ansässig in Rodgau",
+      "OPEN_TO_WORK": "Offen für neue Projekte"
+    }
+  },
+  "ABOUT-ME": {
+    "WHO_I_AM": "Wer Ich bin",
+    "TITLE": "Über mich",
+    "INTRO": "Hey, ich bin Jan-Oliver. Ich bin ein passionierter Frontend Entwickler mit einem Auge für Design und technische Exzellenz. Es fasziniert mich, wie Technologie moderne Erlebnisse prägt.",
+    "LEARNING": "Kontinuierliche Optimierung: Das „1 % besser jeden Tag“-Mindset ist mein Standard. Ich brenne darauf, Systeme zu verfeinern, Codebases zu optimieren und technisch am Puls der Zeit zu bleiben.",
+    "APPROACH": "Explorative Neugier: Stillstand ist für mich keine Option. Ich suche gezielt nach neuen Herausforderungen und Technologien, um über den Tellerrand hinauszublicken.",
+    "LOCATION": " Standort: Offen für Remote-Arbeit."
+  },
+  "SKILLS": {
+    "SUB_TITLE": "Technologien",
+    "TITLE": "Fähigkeiten",
+    "DESCRIPTION": "Technologien sind für mich ein Werkzeugkasten zur Lösung echter Probleme. Ich arbeite gern mit modernen Frontend-Tools und möchte verstehen, wie Dinge wirklich funktionieren. Die schnelle Entwicklung im Web motiviert mich, ständig dazuzulernen. In meiner Weiterentwicklung habe ich gelernt, sauberen und wartbaren Code in agilen Teams zu schreiben. Ich sehe mich als lernhungriges Teammitglied, das technische Lösungen immer im Kontext des Geschäftswerts betrachtet.",
+    "CTA": "Du suchst eine bestimmte",
+    "CTA_SKILL": "Technologie?",
+    "CONTACT_ME": "Kontaktiere mich! Ich erweitere mein Skillset kontinuierlich.",
+    "CTA_BUTTON": "Reden wir",
+    "TOOLTIP": "Ich habe ein besonderes Interesse am Lernen von"
+  },
+  "FEATURED-PROJECTS": {
+    "SUB_TITLE": "Portfolio",
+    "TITLE": "Ausgewählte Projekte",
+    "DESCRIPTION": "Entdecke eine Auswahl meiner Arbeit - Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "COMING_SOON": "In Bearbeitung",
+    "DIALOG": {
+      "QUESTION": "Worum geht es in diesem Projekt?",
+      "GITHUB": "GitHub",
+      "LIVE_TEST": "Live Test",
+      "UPCOMING_NOTICE": "Dieses Projekt ist gerade in der Entwicklung.",
+      "NEXT_PROJECT": "Nächstes Projekt",
+      "PREV_PROJECT": "Vorheriges Projekt"
+    },
+    "PROJECTS": {
+      "JOIN": {
+        "DESCRIPTION": "Webbasierte Kanban-App für Aufgabenverwaltung: Nutzer können Aufgaben in interaktiven Listen erstellen, organisieren und verfolgen – ideal für Einzelpersonen oder Teams."
+      },
+      "EL_POLLO_LOCO": {
+        "DESCRIPTION": "Ein 2D-Jump-and-Run-Browserspiel mit objektorientiertem JavaScript: Besiege Gegner, sammle Items und erreiche den Endboss."
+      },
+      "POLL_APP": {
+        "DESCRIPTION": "Poll App ist eine Angular-App zum Erstellen, Teilen und Auswerten von Umfragen in Echtzeit - mit Supabase als Backend für Authentifizierung und Datenhaltung."
+      }
+    }
+  },
+  "FEEDBACK": {
+    "SUB_TITLE": "Feedback",
+    "TITLE": "Was meine Kollegen über mich sagen",
+    "ITEMS": [
+      {
+        "NAME": "Maik Groth",
+        "PROJECT": "Join",
+        "TEXT": "Die Zusammenarbeit mit Jan-Oliver war extrem produktiv und fand auf Augenhöhe statt. Er arbeitet sehr strukturiert und detailorientiert, was die Qualität unseres Projekts deutlich verbessert hat. Auf seine zuverlässige und saubere Umsetzung war jederzeit Verlass, und bei Problemen lieferte er stets lösungsorientierte Vorschläge. Ein starker Teamplayer, mit dem ich jederzeit wieder Projekte umsetzen würde.",
+        "GITHUB_LINK": "https://github.com/croser93"
+      },
+      {
+        "NAME": "Leon Leuning",
+        "PROJECT": "Join",
+        "TEXT": "Jan-Oliver war sehr stark in der teaminternen Kommunikation und hat die Zusammenarbeit strukturiert und koordiniert. Dabei zeigte er klare Führungsqualitäten und brachte Ordnung in unsere Arbeitsabläufe. Durch seinen hohen Qualitätsanspruch und Perfektionismus konnten wir Design und Code auf ein sehr hohes Niveau bringen und am Ende ein überzeugendes Produkt abliefern. Er arbeitete schnell und zuverlässig, was uns besonders in Richtung Abgabe enorm geholfen hat. Seine sorgfältige Arbeitsweise war zudem lehrreich und hat auch mich persönlich weitergebracht.",
+        "GITHUB_LINK": "https://github.com/213Leon213"
+      },
+      {
+        "NAME": "Anne Sanewski",
+        "PROJECT": "Kochwelt",
+        "TEXT": "Die Zusammenarbeit mit Jan-Oliver war sehr angenehm. Er denkt mit, arbeitet zuverlässig und ist freundlich, was zu einer entspannten Arbeitsatmosphäre beigetragen hat. Durch seine strukturierte Arbeitsweise konnten wir unser Ziel schnell erreichen. Es hat mich gefreut, mit ihm zusammenzuarbeiten.",
+        "GITHUB_LINK": "https://github.com/Saki63"
+      }
+    ]
+  },
+  "CONTACT-FORM": {
+    "SUB_TITLE": "Kontaktiere mich",
+    "TITLE": "Lass uns zusammenarbeiten",
+    "DESCRIPTION_TITLE": "Suchen Sie Verstärkung für Ihr Team?",
+    "DESCRIPTION": "Ich arbeite gerne an realen Projekten mit und bringe mich aktiv in neue Herausforderungen ein. Besonders reizt mich ein Umfeld, in dem ich Verantwortung übernehmen und mich Schritt für Schritt weiterentwickeln kann. Durch meinen Business-Background bringe ich eine strukturierte, lösungsorientierte Perspektive in technische Herausforderungen ein und denke über Code hinaus auch in Produkt- und Nutzerwert.",
+    "DESCRIPTION_CTA": "Wenn Du einen Frontend Developer suchst, der mitdenkt, Verantwortung übernehmen möchte und langfristig wachsen will,",
+    "DESCRIPTION_CTA_TALK": "sollten wir miteinander sprechen.",
+    "NAME_LABEL": "Wie ist Dein Name?",
+    "NAME_INPUT_PLACEHOLDER": "Lass mich Deinen Namen wissen",
+    "NAME_INPUT_ERROR": "Bitte gib Deinen Namen an",
+    "EMAIL_LABEL": "Wie lautet Deine E-Mail-Adresse?",
+    "EMAIL_INPUT_PLACEHOLDER": "Lass mich Deine E-Mail-Adresse wissen",
+    "EMAIL_INPUT_ERROR": "Bitte gib eine valide Email an",
+    "MESSAGE_LABEL": "Wie kann ich Ihnen helfen?",
+    "MESSAGE_INPUT_PLACEHOLDER": "Hey Jan-Oliver, ich bin interessiert an ...",
+    "MESSAGE_INPUT_ERROR": "Bitte schreibe eine Nachricht an mich",
+    "PRIVACY_POLICY_TEXT": "Ich habe die",
+    "PRIVACY_POLICY": "Datenschutzbestimmungen",
+    "PRIVACY_POLICY_TEXT1": "gelesen und stimme der Verarbeitung meiner Daten wie angegeben zu.",
+    "PRIVACY_POLICY_ERROR": "Bitte bestätige die Datenschutzerklärung.",
+    "SUBMIT_BUTTON": "Sag Hallo :)",
+    "SUCCESS_FEEDBACK": "Vielen Dank für Deine Nachricht! Ich habe Deine Nachricht erhalten und werde mich schnellstmöglich bei Dir zurückmelden."
+  },
+  "FOOTER": {
+    "DEVELOPER": "Frontend Entwickler",
+    "LOCATION": "63110 Rodgau, Deutschland",
+    "EMAIL": "Email",
+    "IMPRINT": "Impressum"
+  },
+  "IMPRINT": {
+    "HEADLINE": "Impressum",
+    "TITLE": "Angaben gemäß §5 DDG",
+    "CONTACT": "Kontakt"
+  },
+  "PRIVACY": {
+    "HEADLINE": "Datenschutzerklärung",
+    "SECTION_1": {
+      "TITLE": "1. Datenschutz auf einen Blick",
+      "SUB_1": "Allgemeine Hinweise",
+      "P_1": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+      "SUB_2": "Datenerfassung auf dieser Website",
+      "Q_1": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+      "A_1": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+      "Q_2": "Wie erfassen wir Ihre Daten?",
+      "A_2_1": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+      "A_2_2": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.",
+      "Q_3": "Wofür nutzen wir Ihre Daten?",
+      "A_3": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet.",
+      "Q_4": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+      "A_4_1": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.",
+      "A_4_2": "Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden."
+    },
+    "SECTION_2": {
+      "TITLE": "2. Hosting",
+      "P_1": "Wir hosten die Inhalte unserer Website bei folgenden Anbietern:",
+      "SUB_1": "IONOS",
+      "P_2": "Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410 Montabaur (nachfolgend IONOS). Wenn Sie unsere Website besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von IONOS: https://www.ionos.de/terms-gtc/terms-privacy.",
+      "P_3": "Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website.",
+      "SUB_2": "Externes Hosting durch Vercel",
+      "P_4": "Diese Website wird zusätzlich extern gehostet durch: Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA. Die personenbezogenen Daten, die auf dieser Website erfasst werden (v. a. IP-Adressen, Meta- und Kommunikationsdaten), werden auf den Servern von Vercel gespeichert.",
+      "P_5": "Das Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren und effizienten Bereitstellung unseres Online-Angebots (Art. 6 Abs. 1 lit. f DSGVO).",
+      "SUB_3": "Auftragsverarbeitung",
+      "P_6": "Wir haben Verträge über Auftragsverarbeitung (AVV) mit den oben genannten Anbietern geschlossen. Dies gewährleistet, dass diese die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeiten."
+    },
+    "SECTION_3": {
+      "TITLE": "3. Allgemeine Hinweise und Pflichtinformationen",
+      "SUB_1": "Datenschutz",
+      "P_1": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+      "P_2": "Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.",
+      "P_3": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+      "SUB_2": "Hinweis zur verantwortlichen Stelle",
+      "P_4": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+      "P_5": "Jan-Oliver Kämmerer<br />Berliner Straße 18a<br />63110 Rodgau",
+      "P_6": "E-Mail: jowieja22@gmail.com",
+      "P_7": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.",
+      "SUB_3": "Speicherdauer",
+      "P_8": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.",
+      "SUB_4": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
+      "P_9": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.",
+      "SUB_5": "Empfänger von personenbezogenen Daten",
+      "P_10": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gütigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.",
+      "SUB_6": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+      "P_11": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.",
+      "SUB_7": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
+      "P_12": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).",
+      "P_13": "WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).",
+      "SUB_8": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
+      "P_14": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.",
+      "SUB_9": "Recht auf Datenübertragbarkeit",
+      "P_15": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.",
+      "SUB_10": "Auskunft, Berichtigung und Löschung",
+      "P_16": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.",
+      "SUB_11": "Recht auf Einschränkung der Verarbeitung",
+      "P_17": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:",
+      "LI_1": "Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+      "LI_2": "Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.",
+      "LI_3": "Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+      "LI_4": "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
+      "P_18": "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.",
+      "SUB_12": "SSL- bzw. TLS-Verschlüsselung",
+      "P_19": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
+      "P_20": "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.",
+      "SUB_13": "Widerspruch gegen Werbe-E-Mails",
+      "P_21": "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
+    },
+    "SECTION_4": {
+      "TITLE": "4. Datenerfassung auf dieser Website",
+      "SUB_1": "Server-Log-Dateien",
+      "P_1": "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:",
+      "LI_1": "Browsertyp und Browserversion",
+      "LI_2": "verwendetes Betriebssystem",
+      "LI_3": "Referrer URL",
+      "LI_4": "Hostname des zugreifenden Rechners",
+      "LI_5": "Uhrzeit der Serveranfrage",
+      "LI_6": "IP-Adresse",
+      "P_2": "Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website.",
+      "SUB_2": "Kontaktformular",
+      "P_3": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage bei uns gespeichert. Die Übertragung dieser Daten erfolgt verschlüsselt mittels HTTPS.",
+      "P_4": "Zur Sicherstellung der Datensicherheit setzen wir in unserer Angular- und PHP-basierten Anwendung serverseitige Validierungen sowie Schutzmechanismen gegen Cross-Site-Request-Forgery (CSRF) und Spam ein. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) oder auf Grundlage unseres berechtigten Interesses an der effektiven Bearbeitung der Anfragen (Art. 6 Abs. 1 lit. f DSGVO).",
+      "P_5": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage) oder Sie uns zur Löschung auffordern. Zwingende gesetzliche Bestimmungen bleiben unberührt.",
+      "SUB_3": "Anfrage per E-Mail, Telefon oder Telefax",
+      "P_6": "Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+      "P_7": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO. Die Daten verbleiben bei uns, bis der Zweck für die Datenspeicherung entfällt oder Sie uns zur Löschung auffordern."
+    }
+  }
+}

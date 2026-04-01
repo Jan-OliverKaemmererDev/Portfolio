@@ -1,0 +1,30 @@
+<header [class.menu_open]="isMenuOpen">
+  <div class="container header_wrapper">
+      <div class="burger_menu" (click)="toggleMenu()" [class.open]="isMenuOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav [class.mobile_active]="isMenuOpen">
+        <div class="language_toggle" (click)="changeLanguage()">
+          <button class="btn lang_btn" [class.german]="!isEnglish">
+            <div class="lang_slider" [class.german]="!isEnglish"></div>
+            <span class="lang_option en" [class.active]="isEnglish">EN</span>
+            <span class="lang_option de" [class.active]="!isEnglish">DE</span>
+          </button>
+        </div>
+        <a routerLink="/" fragment="aboutMe" class="hover_shadow" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+        <a routerLink="/" fragment="skills" class="hover_shadow" (click)="closeMenu()">{{ 'NAV.SKILLS' | translate }}</a>
+        <a routerLink="/" fragment="featuredProjects" class="hover_shadow" (click)="closeMenu()">{{ 'NAV.PROJECTS' |
+          translate }}</a>
+      </nav>
+      <a routerLink="/" fragment="hero" class="logo_container" (click)="closeMenu()">
+      <span class="logo_text">Jan-Oliver</span>
+      <svg viewBox="30 0 80 60" class="header_brackets">
+        <path d="M55 10 L30 30 L55 50" class="bracket_path" />
+        <path d="M85 10 L110 30 L85 50" class="bracket_path" />
+      </svg>
+      <span class="logo_text">Kämmerer</span>
+    </a>
+  </div>
+</header>

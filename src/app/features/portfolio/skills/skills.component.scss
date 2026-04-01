@@ -1,0 +1,316 @@
+@use '../../../../styles/variables' as *;
+
+section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: $color-bg-dark;
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    z-index: 1;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba($color-accent, 0.15) 0%, rgba($color-accent, 0) 70%);
+    filter: blur(60px);
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    @media (max-width: 800px) {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 40px 0;
+  }
+}
+
+.section_subtitle {
+  margin-bottom: 24px;
+  font-family: $font-fira;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $color-accent;
+}
+
+.skills_layout {
+  @include flex-between(row, center, 80px);
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    gap: 48px;
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.skills_left {
+  flex: 1;
+  max-width: 550px;
+
+  .content_box {
+    @include flex-column(32px);
+    @include glass-panel();
+
+    .skill_title h1 {
+      @include section-title-styles();
+    }
+
+    .skill_description p {
+      line-height: 1.5;
+      text-align: start;
+    }
+
+    .skill_cta {
+      @include flex-column(24px);
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+        span {
+          font-family: $font-fira;
+          font-size: inherit;
+          color: $color-accent;
+        }
+
+        @media (max-width: 450px) {
+          font-size: 1.25rem;
+        }
+      }
+
+      p {
+        line-height: 1.2;
+      }
+
+      .btn {
+        width: fit-content;
+        transition: background-color $defaultDuration ease, color $defaultDuration ease, border-color $defaultDuration ease;
+
+        &:hover {
+          background-color: $color-accent;
+          color: $color-bg-dark;
+          border-color: $color-accent;
+        }
+      }
+
+      @media (max-width: 900px) {
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 450px) {
+      padding: 24px 16px;
+      gap: 24px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
+}
+
+.skills_right {
+  flex: 1;
+  width: 100%;
+
+  .skills_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 64px 32px;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px 24px;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px 16px;
+    }
+  }
+
+  .skill_item {
+    @include flex-column(16px, flex-start, center);
+    transition: transform $defaultDuration ease;
+    backface-visibility: hidden; 
+
+    .skill_icon {
+      width: 64px;
+      height: 64px;
+      @include flex-center();
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: filter $defaultDuration ease;
+      }
+    }
+
+    .skill_name {
+      color: $color-light-gray;
+      white-space: nowrap;
+    }
+
+    .skill_tooltip {
+      position: absolute;
+      bottom: calc(100% + 20px);
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      width: 280px;
+      padding: 24px;
+      background: white;
+      border: 2px solid rgba($color-accent, 0.2);
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity $defaultDuration ease, visibility $defaultDuration ease, transform $defaultDuration ease;
+
+      .tooltip_text {
+        font-weight: 600;
+        line-height: 1.2;
+        color: $color-accent;
+        text-align: center;
+      }
+
+      .tooltip_assets {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        .asset_item {
+          @include flex-column(8px, flex-start, center);
+
+          img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+
+            @media (max-width: 450px) {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          span {
+            color: $color-accent;
+          }
+        }
+
+        @media (max-width: 450px) {
+          gap: 16px;
+        }
+      }
+
+      .tooltip_arrow {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 12px solid white;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -14px;
+          left: -12px;
+          z-index: -1;
+          width: 0;
+          height: 0;
+          border-left: 12px solid transparent;
+          border-right: 12px solid transparent;
+          border-top: 12px solid rgba($color-accent, 0.1);
+
+          @media (max-width: 600px) {
+            top: -10px;
+            left: 0;
+            border-left: none;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid rgba($color-accent, 0.1);
+          }
+        }
+
+        @media (max-width: 600px) {
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%) translateX(-100%);
+          border-left: none;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 10px solid white;
+        }
+      }
+
+      @media (max-width: 600px) {
+        bottom: auto;
+        top: 32px;
+        left: calc(50% + 64px);
+        transform: translateY(-50%) translateX(10px);
+        width: 250px;
+        padding: 16px;
+      }
+
+      @media (max-width: 450px) {
+        width: 164px;
+      }
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+
+      .skill_icon img {
+        filter: drop-shadow(0 0 16px rgba($color-accent, 0.5));
+      }
+    }
+
+    &.has-tooltip {
+      position: relative;
+
+      .skill_name {
+        color: $color-accent;
+        opacity: 1;
+      }
+
+      &:hover {
+        .skill_tooltip {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(-50%) translateY(0);
+
+          @media (max-width: 600px) {
+            transform: translateY(-50%) translateX(0);
+          }
+        }
+      }
+    }
+  }
+}

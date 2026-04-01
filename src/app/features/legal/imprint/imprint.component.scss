@@ -1,0 +1,35 @@
+@use '../../../../styles/variables' as *;
+
+section {
+  width: 100%;
+  height: calc(100vh - 174px);
+  padding-top: 104px;
+  overflow: hidden;
+  @include flex-center();
+
+  h1, h2{
+    font-family: $font-fira;
+  }
+  
+  .imprint_title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: $color-accent;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+}
+
+.imprint_content {
+  @include flex-column(48px);
+
+  .imprint_group {
+    @include flex-column(16px);
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-accent;
+    }
+  }
+}

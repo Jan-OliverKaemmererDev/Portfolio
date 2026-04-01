@@ -1,0 +1,344 @@
+@use '../../../../styles/variables' as *;
+
+section {
+  @include section-setup($with-glow: true, $glow-left: true);
+}
+
+.contact_layout {
+  @include flex-start(row, stretch, 16px);
+  justify-content: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    gap: 48px;
+  }
+}
+
+.contact_intro {
+  flex: 1;
+  opacity: 1; 
+
+  @media (max-width: 900px) {
+    text-align: center;
+  }
+
+  .contact_subtitle {
+    font-family: $font-fira;
+    color: $color-accent;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+
+    @media (max-width: 450px) {
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+    }
+  }
+
+  .contact_title {
+    @include section-title-styles();
+    margin-bottom: 32px;
+
+    @media (max-width: 375px) {
+      font-size: 2rem;
+    }
+  }
+
+  .contact_description {
+    line-height: 1.5;
+    text-align: start;
+    word-wrap: break-word;
+    hyphens: auto;
+
+    span { 
+      color: $color-accent; 
+    }
+  }
+}
+
+.contact_form {
+  flex: 1;
+  max-width: 800px;
+  @include flex-column();
+  transition: border-color $defaultDuration ease;
+
+  &:has(.input_group:first-of-type.error) {
+    .input_group:first-of-type {
+      border-top-color: $color-error;
+    }
+  }
+
+  .input_group {
+    @include flex-column();
+    min-height: 130px;
+    padding: 24px 24px 44px;
+    border-top: 1px solid rgba($color-accent, 0.4);
+    border-bottom: 1px solid rgba($color-accent, 0.4);
+    transition: all $defaultDuration ease;
+    position: relative;
+    margin-top: -1px; 
+
+    &:hover,
+    &:focus-within {
+      background-color: rgba($color-accent, 0.03);
+      z-index: 2;
+
+      .input_info label {
+        color: $color-accent;
+        transform: translateX(8px);
+      }
+    }
+
+    &.error {
+      border-color: $color-error;
+      background-color: rgba($color-error, 0.02);
+      z-index: 2;
+
+      .input_info label { 
+        color: $color-error; 
+      }
+    }
+
+    .input_info label {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: $color-accent;
+      transition: all $defaultDuration ease;
+      display: block;
+      margin-bottom: 16px;
+
+      @media (max-width: 450px) {
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+      }
+    }
+
+    .input_field {
+      flex: 1;
+      @include flex-column();
+
+      input,
+      textarea {
+        background: transparent;
+        border: none;
+        font-size: 1.25rem;
+        color: white;
+
+        @media (max-width: 450px) { 
+          font-size: 1rem !important; 
+        }
+
+        &:focus { 
+          outline: none; 
+        }
+
+        &::placeholder {
+          color: $color-light-gray;
+          opacity: 0.5;
+        }
+
+        &:-webkit-autofill {
+          -webkit-text-fill-color: white;
+          -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+          transition: background-color 5000s ease-in-out 0s;
+        }
+      }
+    }
+
+    textarea { 
+      resize: none;
+    }
+
+    .error_message {
+      position: absolute;
+      bottom: 16px;
+      right: 24px;
+      @include flex-start(row, center, 8px);
+      color: $color-error;
+      animation: errorReveal 0.4s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+      pointer-events: none;
+
+      &::before {
+        content: '!';
+        @include flex-center();
+        width: 16px;
+        height: 16px;
+        border: 1px solid $color-error;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .form_footer {
+    padding: 32px 24px;
+    @include flex-column($gap: 32px);
+  }
+
+  .privacy_container {
+    position: relative;
+    padding-bottom: 16px;
+  }
+
+  .privacy_policy {
+    @include flex-start(row, flex-start, 16px);
+
+    input[type="checkbox"] {
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      background-image: url('/assets/img/contact-form/checkbox-default.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+
+      &:checked {
+        background-image: url('/assets/img/contact-form/checkbox-checked.png');
+      }
+    }
+
+    .privacy_text {
+      font-family: $font-fira;
+      color: $color-light-gray;
+      line-height: 1.5;
+
+      span {
+        color: $color-accent;
+        cursor: pointer;
+
+        &:hover { 
+          text-decoration: underline; 
+        }
+      }
+    }
+  }
+
+  .privacy_error {
+    position: absolute;
+    bottom: -16px;
+    color: $color-error;
+    animation: errorReveal 0.4s ease forwards;
+  }
+
+  .submit_container {
+    @include flex-center();
+
+    .submit_btn {
+      min-width: 180px;
+      height: 50px;
+      @include flex-center();
+
+      &:hover:not(:disabled) {
+        background-color: $color-accent;
+        color: $color-bg-dark;
+        border-color: $color-accent;
+      }
+
+      &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+
+      .loader {
+        width: 24px;
+        height: 24px;
+        border: 2px solid rgba($color-accent, 0.2);
+        border-top: 2px solid $color-accent;
+        border-radius: 50%;
+        animation: rotation 0.8s linear infinite;
+      }
+    }
+  }
+}
+
+.toast_feedback {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  background: rgba($color-bg-dark, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba($color-accent, 0.3);
+  padding: 16px 28px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  @include flex-column();
+  overflow: hidden;
+  animation:
+    toastSlideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+    toastFadeOut 0.5s 3.5s ease-in forwards;
+
+    @media (min-width: 450px) {
+    bottom: 40px;
+    width: auto;
+    min-width: 450px;
+  }
+
+  .toast_content {
+    @include flex-start(row, center, 16px);
+
+    span { 
+      font-weight: 500; 
+      white-space: normal; 
+    }
+
+    .check_icon {
+      flex-shrink: 0;
+      width: 24px; 
+      height: 24px; 
+      fill: none;
+      stroke: $color-accent; 
+      stroke-width: 2.5;
+      stroke-linecap: round; 
+      stroke-linejoin: round;
+      stroke-dasharray: 50; 
+      stroke-dashoffset: 50;
+      animation: checkDraw 0.5s 0.3s forwards;
+    }
+  }
+
+  .progress_bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: $color-accent;
+    width: 100%;
+    transform-origin: left;
+    animation: progressShrink 4s linear forwards;
+  }
+}
+
+@keyframes toastSlideIn {
+  from { opacity: 0; transform: translate(-50%, 60px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+@keyframes toastFadeOut {
+  from { opacity: 1; transform: translate(-50%, 0); }
+  to   { opacity: 0; transform: translate(-50%, 20px); }
+}
+
+@keyframes progressShrink {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
+@keyframes checkDraw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes errorReveal {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

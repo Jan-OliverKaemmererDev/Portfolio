@@ -1,0 +1,29 @@
+<footer>
+  <div class="container">
+    <div class="footer_container">
+      <div class="logo_and_text">
+        <a routerLink="/" fragment="hero" class="footer_logo_link">
+          <span class="logo_text">Jan-Oliver</span>
+          <svg viewBox="30 0 80 60" class="footer_brackets">
+            <path d="M55 10 L30 30 L55 50" class="bracket_path" />
+            <path d="M85 10 L110 30 L85 50" class="bracket_path" />
+          </svg>
+          <span class="logo_text">Kämmerer</span>
+        </a>
+        <p>{{ 'FOOTER.DEVELOPER' | translate }}</p>
+        <p>{{ 'FOOTER.LOCATION' | translate }}</p>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; Jan-Oliver Kämmerer 2026</p>
+      </div>
+      
+      <div class="footer_links">
+        <a href="https://github.com/Jan-OliverKaemmererDev" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/jan-oliver-k%C3%A4mmerer-704a1834b/" target="_blank">LinkedIn</a>
+        <a href="mailto:jowieja22@gmail.com">{{ 'FOOTER.EMAIL' | translate }}</a>
+        <a routerLink="/imprint">{{ 'FOOTER.IMPRINT' | translate }}</a>
+      </div>
+    </div>
+  </div>
+</footer>

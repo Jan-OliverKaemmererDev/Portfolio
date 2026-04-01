@@ -1,0 +1,104 @@
+<section id="contactMe">
+  <div class="container">
+    <div class="contact_layout">
+      <div class="contact_intro">
+        <h3 class="contact_subtitle">{{ "CONTACT-FORM.SUB_TITLE" | translate }}</h3>
+        <h1 class="contact_title">{{ "CONTACT-FORM.TITLE" | translate }}</h1>
+        <h3 class="contact_subtitle">{{ "CONTACT-FORM.DESCRIPTION_TITLE" | translate }}</h3>
+        <p class="contact_description">
+          {{ "CONTACT-FORM.DESCRIPTION" | translate }}
+          <br>
+          <br>
+          {{ "CONTACT-FORM.DESCRIPTION_CTA" | translate }}
+          <span>{{ "CONTACT-FORM.DESCRIPTION_CTA_TALK" | translate }}</span>
+        </p>
+      </div>
+
+      <form class="contact_form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+        <div class="input_group" [class.error]="name.invalid && name.touched">
+          <div class="input_info">
+            <label for="name">{{ "CONTACT-FORM.NAME_LABEL" | translate }}</label>
+          </div>
+          <div class="input_field">
+            <input #name="ngModel" [(ngModel)]="contactData.name" 
+              [ngModelOptions]="{ updateOn: 'blur' }"
+              type="text" id="name" name="name" autocomplete="name"
+              [placeholder]="'CONTACT-FORM.NAME_INPUT_PLACEHOLDER' | translate" required />
+            @if (name.invalid && name.touched) {
+              <span class="error_message">{{ "CONTACT-FORM.NAME_INPUT_ERROR" | translate }}</span>
+            }
+          </div>
+        </div>
+
+        <div class="input_group" [class.error]="email.invalid && email.touched">
+          <div class="input_info">
+            <label for="email">{{ "CONTACT-FORM.EMAIL_LABEL" | translate }}</label>
+          </div>
+          <div class="input_field">
+            <input #email="ngModel" [(ngModel)]="contactData.email" 
+              [ngModelOptions]="{ updateOn: 'blur' }"
+              type="email" id="email" name="email" autocomplete="email"
+              [placeholder]="'CONTACT-FORM.EMAIL_INPUT_PLACEHOLDER' | translate"
+              pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required />
+            @if (email.invalid && email.touched) {
+              <span class="error_message">{{ "CONTACT-FORM.EMAIL_INPUT_ERROR" | translate }}</span>
+            }
+          </div>
+        </div>
+
+        <div class="input_group" [class.error]="message.invalid && message.touched && !message.disabled">
+          <div class="input_info">
+            <label for="message">{{ "CONTACT-FORM.MESSAGE_LABEL" | translate }}</label>
+          </div>
+          <div class="input_field">
+            <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message"
+              [placeholder]="'CONTACT-FORM.MESSAGE_INPUT_PLACEHOLDER' | translate" rows="3" required></textarea>
+            @if (message.invalid && message.touched && !message.disabled) {
+            <span class="error_message">{{ "CONTACT-FORM.MESSAGE_INPUT_ERROR" | translate }}</span>
+            }
+          </div>
+        </div>
+
+        <div class="form_footer">
+          <div class="privacy_container">
+            <div class="privacy_policy">
+              <input #privacy="ngModel" [(ngModel)]="contactData.privacy" (change)="privacy.control.markAsTouched()" type="checkbox" id="privacy" name="privacy" required />
+              <label for="privacy"></label>
+              <div class="privacy_text">
+                {{ "CONTACT-FORM.PRIVACY_POLICY_TEXT" | translate }}
+                <a routerLink="/privacy"><span>{{ "CONTACT-FORM.PRIVACY_POLICY" | translate }}</span></a>
+                {{ "CONTACT-FORM.PRIVACY_POLICY_TEXT1" | translate }}
+              </div>
+            </div>
+            @if (privacy.invalid && privacy.touched) {
+              <span class="error_message privacy_error">{{ "CONTACT-FORM.PRIVACY_POLICY_ERROR" | translate }}</span>
+            }
+          </div>
+
+          <div class="submit_container">
+            <button type="submit" class="submit_btn btn" 
+              [disabled]="name.invalid || email.invalid || message.invalid || isSending">
+              @if (isSending) {
+                <span class="loader"></span>
+              } @else {
+                {{ "CONTACT-FORM.SUBMIT_BUTTON" | translate }}
+              }
+            </button>
+          </div>
+
+          @if (mailSent) {
+            <div class="toast_feedback">
+              <div class="toast_content">
+                <svg class="check_icon" viewBox="0 0 24 24">
+                  <path d="M20 6L9 17L4 12" />
+                </svg>
+                <span>{{ "CONTACT-FORM.SUCCESS_FEEDBACK" | translate }}</span>
+              </div>
+              <div class="progress_bar"></div>
+            </div>
+          }
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

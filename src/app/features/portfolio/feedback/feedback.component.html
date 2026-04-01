@@ -1,0 +1,56 @@
+<section id="feedback">
+  <div class="container">
+    <div class="section_header">
+      <h2 class="section_subtitle">{{ 'FEEDBACK.SUB_TITLE' | translate }}</h2>
+      <h1 class="section_title">{{ 'FEEDBACK.TITLE' | translate }}</h1>
+    </div>
+
+    <div class="slider_wrapper">
+      <ul id="cards">
+        @for (feedback of feedbacks; track $index) {
+          <li class="card" #card [class.active]="$index === currentIndex">
+            <div class="card__content">
+              <div class="quote_icon">
+                <img src="assets/img/feedback/quotes.png" alt="Quote">
+              </div>
+
+              <p class="feedback_text">{{ 'FEEDBACK.ITEMS.' + $index + '.TEXT' | translate }}</p>
+
+              <div class="author">
+                <div class="author_info">
+                  <h3>{{ 'FEEDBACK.ITEMS.' + $index + '.NAME' | translate }}</h3>
+                  <span>{{ 'FEEDBACK.ITEMS.' + $index + '.PROJECT' | translate }}</span>
+                  <a [href]="'FEEDBACK.ITEMS.' + $index + '.GITHUB_LINK' | translate" target="_blank" class="github_link">
+                    <img src="assets/img/feedback/github-icon.png" alt="GitHub">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <span class="number">0{{ $index + 1 }}</span>
+              </div>
+            </div>
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="slider_controls">
+      <button class="nav_btn" (click)="prev()">
+        <svg viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+
+      <div class="dots">
+        @for (f of feedbacks; track i; let i = $index) {
+          <span class="dot" [class.active]="i === currentIndex" (click)="goToSlide(i)"></span>
+        }
+      </div>
+
+      <button class="nav_btn" (click)="next()">
+        <svg viewBox="0 0 24 24">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,128 @@
+@use '../src/styles/variables' as *;
+
+body:has(app-imprint),
+body:has(app-privacy) {
+  background: linear-gradient(55.22deg, #1C1C1C 36.26%, #08463B 93.28%);
+  min-height: 100vh;
+
+  app-footer footer {
+    background-color: transparent !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  outline: none;
+  font-family: $font-karla;
+  font-size: 1rem;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/assets/fonts/karla-v33-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/assets/fonts/karla-v33-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/assets/fonts/karla-v33-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/assets/fonts/karla-v33-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../public/assets/fonts/karla-v33-latin-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../public/assets/fonts/fira-code-v27-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../public/assets/fonts/fira-code-v27-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../public/assets/fonts/fira-code-v27-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../public/assets/fonts/fira-code-v27-latin-700.woff2') format('woff2');
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+  @include flex-column();
+
+  @media (max-width: 450px) {
+    padding: 0 16px;
+  }
+}
+
+.btn {
+  height: 2.5rem;
+  border-radius: 100px;
+  border: 1px solid white;
+  background: transparent;
+  padding: 0 24px;
+  @include flex-center(row, 8px);
+  line-height: 1.2;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all $defaultDuration ease;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
