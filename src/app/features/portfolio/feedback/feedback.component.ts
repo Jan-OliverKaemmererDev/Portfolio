@@ -230,8 +230,8 @@ export class FeedbackComponent implements AfterViewInit, OnDestroy {
     const dy = y - yc;
     
     return {
-      rotationY: dx / 20,
-      rotationX: -dy / 20
+      rotationY: dx / 80,
+      rotationX: -dy / 80
     };
   }
 
@@ -244,7 +244,7 @@ export class FeedbackComponent implements AfterViewInit, OnDestroy {
       rotationY,
       rotationX,
       stretch: 0,
-      duration: 0.4,
+      duration: 0.6,
       ease: 'power3.out',
       transformPerspective: 1000
     });

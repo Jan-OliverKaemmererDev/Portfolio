@@ -63,22 +63,22 @@
     "TITLE": "What my colleagues say about me",
     "ITEMS": [
       {
-        "NAME": "Maik Groth",
+        "NAME": "Virxhin Bytyqi",
         "PROJECT": "Join",
-        "TEXT": "Working with Jan-Oliver was highly productive and a true collaboration between equals. He works in a very structured and detail-oriented manner, which significantly improved the overall quality of our project. His execution was always clean and reliable, and he consistently provided solution-oriented ideas whenever challenges arose. A strong team player I would definitely work with again.",
-        "GITHUB_LINK": "https://github.com/croser93"
+        "TEXT": "Jan-Oliver, your eye for detail truly impressed me. The fact that you caught even the smallest errors and fixed them so quickly and efficiently significantly raised our coding standards. Thank you for taking over the Trello board; thanks to your overview of the to-dos, we always knew exactly where we stood. You were the engine that diligently pushed the project forward every single day. You showed an incredible amount of hard work on this project. Your blend of technical precision and organizational skill made 'Join' structured and professional. It was reassuring to know that you were keeping track of everything!",
+        "GITHUB_LINK": "https://github.com/babalushi04"
       },
       {
-        "NAME": "Leon Leuning",
+        "NAME": "Maximilian Bese",
         "PROJECT": "Join",
-        "TEXT": "Jan-Oliver was very strong in team communication and helped structure and coordinate our collaboration. He demonstrated clear leadership qualities and brought structure to our workflow. Thanks to his high standards and attention to detail, we were able to raise the quality of both the design and the code and deliver a strong final product. He worked quickly and reliably, which helped a lot — especially as we approached the deadline. His careful way of working was also genuinely educational and helped me grow personally.",
-        "GITHUB_LINK": "https://github.com/213Leon213"
+        "TEXT": "I worked together with Jan-Oliver on the Join project. He dove deep into the subject matter and didn't just check off tasks on the surface; he truly understood the logic behind them. His approach was structured, and he immersed himself in the details with great independence. The collaboration was seamless, and the result was top-tier.",
+        "GITHUB_LINK": "https://github.com/maximilianbese"
       },
       {
-        "NAME": "Anne Sanewski",
+        "NAME": "Marcel Ehrlich",
         "PROJECT": "Kochwelt",
         "TEXT": "Working with Jan-Oliver was a great experience. He is proactive, reliable, and friendly, which created a very relaxed working atmosphere. Thanks to his structured approach, we were able to reach our goals quickly. It was a pleasure collaborating with him.",
-        "GITHUB_LINK": "https://github.com/Saki63"
+        "GITHUB_LINK": "https://github.com/Marcel23895"
       }
     ]
   },

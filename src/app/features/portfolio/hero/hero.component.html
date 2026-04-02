@@ -1,4 +1,31 @@
 <section id="hero">
+  <div class="circuit-container" aria-hidden="true">
+    <svg
+      viewBox="0 0 100 100"
+      preserveAspectRatio="xMidYMid slice"
+      class="circuit-svg"
+    >
+      <!-- Top Left -->
+      <path #circuitLine d="M 48 45 v -5 h -5 v -5 h -10" class="circuit-line" />
+      <path #circuitLine d="M 45 42 v -8 h -12" class="circuit-line" />
+      
+      <!-- Top Right -->
+      <path #circuitLine d="M 52 45 v -5 h 5 v -5 h 10" class="circuit-line" />
+      <path #circuitLine d="M 55 42 v -8 h 12" class="circuit-line" />
+
+      <!-- Bottom Left -->
+      <path #circuitLine d="M 48 55 v 5 h -5 v 5 h -10" class="circuit-line" />
+      <path #circuitLine d="M 45 58 v 8 h -12" class="circuit-line" />
+
+      <!-- Bottom Right -->
+      <path #circuitLine d="M 52 55 v 5 h 5 v 5 h 10" class="circuit-line" />
+      <path #circuitLine d="M 55 58 v 8 h 12" class="circuit-line" />
+
+      <!-- Sides -->
+      <path #circuitLine d="M 40 50 h -10 v 5 h -15" class="circuit-line" />
+      <path #circuitLine d="M 60 50 h 10 v -5 h 15" class="circuit-line" />
+    </svg>
+  </div>
   <div class="header_gradient"></div>
   <div class="container">
     <div class="scroll_indicator">
@@ -9,15 +36,15 @@
     </div>
 
     <div class="hero_content">
-      <h2>{{ 'HERO.JOB_TITLE' | translate }}</h2>
+      <h2>{{ "HERO.JOB_TITLE" | translate }}</h2>
       <div class="hero_title_layout">
         <h1>Jan-Oliver Kämmerer</h1>
         <div class="hero_title_btn">
           <a routerLink="/" fragment="featuredProjects">
-            <button class="btn">{{ 'HERO.MY_PROJECTS' | translate }}</button>
+            <button class="btn">{{ "HERO.MY_PROJECTS" | translate }}</button>
           </a>
           <a routerLink="/" fragment="contactMe">
-            <button class="btn">{{ 'HERO.CONTACT_ME' | translate }}</button>
+            <button class="btn">{{ "HERO.CONTACT_ME" | translate }}</button>
           </a>
         </div>
       </div>
@@ -26,17 +53,57 @@
     <div class="social_sidebar">
       <a href="mailto:jowieja22@gmail.com" class="email">jowieja22@gmail.com</a>
       <div class="social_icons">
-        <a href="mailto:jowieja22@gmail.com" aria-label="Email" class="social_icon mail_mobile">
-          <img src="assets/img/hero/mail-icon.svg" alt="mail icon" class="main_icon">
-          <img src="assets/img/hero/mail.svg" alt="hover mail icon" class="hover_icon">
+        <a
+          href="mailto:jowieja22@gmail.com"
+          aria-label="Email"
+          class="social_icon mail_mobile"
+        >
+          <img
+            src="assets/img/hero/mail-icon.svg"
+            alt="mail icon"
+            class="main_icon"
+          />
+          <img
+            src="assets/img/hero/mail.svg"
+            alt="hover mail icon"
+            class="hover_icon"
+          />
         </a>
-        <a href="https://github.com/Jan-OliverKaemmererDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social_icon">
-          <img src="assets/img/hero/github-icon.svg" alt="github icon" class="main_icon">
-          <img src="assets/img/hero/github.svg" alt="hover github icon" class="hover_icon">
+        <a
+          href="https://github.com/Jan-OliverKaemmererDev"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          class="social_icon"
+        >
+          <img
+            src="assets/img/hero/github-icon.svg"
+            alt="github icon"
+            class="main_icon"
+          />
+          <img
+            src="assets/img/hero/github.svg"
+            alt="hover github icon"
+            class="hover_icon"
+          />
         </a>
-        <a href="https://www.linkedin.com/in/jan-oliver-k%C3%A4mmerer-704a1834b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social_icon">
-          <img src="assets/img/hero/linkedin-icon.svg" alt="linkedin icon" class="main_icon">
-          <img src="assets/img/hero/linkedin.svg" alt="hover linkedin icon" class="hover_icon">
+        <a
+          href="https://www.linkedin.com/in/jan-oliver-k%C3%A4mmerer-704a1834b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="social_icon"
+        >
+          <img
+            src="assets/img/hero/linkedin-icon.svg"
+            alt="linkedin icon"
+            class="main_icon"
+          />
+          <img
+            src="assets/img/hero/linkedin.svg"
+            alt="hover linkedin icon"
+            class="hover_icon"
+          />
         </a>
       </div>
       <div class="sidebar_line"></div>
@@ -46,14 +113,14 @@
   <div class="hero_marquee">
     <div class="marquee_track">
       @for (i of [1, 2, 3]; track $index) {
-      <div class="marquee_content" [attr.aria-hidden]="i === 3">
-        @for (item of marqueeItems; track $index) {
-        <div class="marquee_item">
-          <img src="assets/img/hero/radio-button.svg" alt="radio button">
-          <p>{{ item | translate }}</p>
+        <div class="marquee_content" [attr.aria-hidden]="i === 3">
+          @for (item of marqueeItems; track $index) {
+            <div class="marquee_item">
+              <img src="assets/img/hero/radio-button.svg" alt="radio button" />
+              <p>{{ item | translate }}</p>
+            </div>
+          }
         </div>
-        }
-      </div>
       }
     </div>
   </div>
