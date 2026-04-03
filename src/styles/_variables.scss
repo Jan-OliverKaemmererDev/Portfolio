@@ -75,6 +75,16 @@ $card-offset: 1.5rem;
 	}
 }
 
+@property --glow-angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@keyframes spin-border-glow {
+	to { --glow-angle: 360deg; }
+}
+
 @mixin glass-panel($padding: 32px, $radius: 40px) {
 	padding: $padding;
 	background: linear-gradient(135deg, rgba(28, 28, 28, 0.7) 0%, rgba(8, 70, 59, 0.3) 100%);
@@ -84,10 +94,40 @@ $card-offset: 1.5rem;
 	-webkit-backdrop-filter: blur(24px);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	transition: all $defaultDuration ease;
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: -1px;
+		border-radius: inherit;
+		padding: 2px; 
+		background: conic-gradient(
+			from var(--glow-angle), 
+			transparent 60%, 
+			$color-accent 95%, 
+			#ffffff 100%
+		);
+		-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+		pointer-events: none;
+		z-index: -1;
+	}
 
 	&:hover {
-		border-color: $color-accent;
-		box-shadow: 0 8px 40px rgba($color-accent, 0.1);
+		border-color: transparent;
+		box-shadow: 0 0 30px rgba($color-accent, 0.2);
+		transform: translateY(-2px); // slight lift for better feel
+		
+		&::before {
+			opacity: 1;
+			animation: spin-border-glow 5.5s linear infinite;
+		}
 	}
 }
 

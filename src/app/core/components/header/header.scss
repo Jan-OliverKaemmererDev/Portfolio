@@ -244,10 +244,15 @@ header {
   }
 }
 
+@keyframes textShimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
 .hover_shadow {
   display: inline-block;
   position: relative;
-  transition: color $defaultDuration ease;
+  transition: all $defaultDuration ease;
 
   @include hideTapHighlightColor();
   @include hardwareAccel();
@@ -270,7 +275,20 @@ header {
   }
 
   &:hover {
-    color: $color-accent;
+    background: linear-gradient(
+      120deg,
+      $color-accent 0%,
+      $color-accent 40%,
+      #ffffff 50%,
+      $color-accent 60%,
+      $color-accent 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: textShimmer 1s ease-in-out forwards;
 
     &::after {
       opacity: 1;

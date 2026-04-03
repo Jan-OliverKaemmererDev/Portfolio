@@ -17,7 +17,8 @@ export class FeedbackComponent implements AfterViewInit, OnDestroy {
   feedbacks = [
     { id: 1 }, 
     { id: 2 }, 
-    { id: 3 }
+    { id: 3 },
+    { id: 4 }
   ];
   currentIndex = 0;
   private isAnimating = false;

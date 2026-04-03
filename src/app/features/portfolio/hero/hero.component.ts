@@ -55,16 +55,16 @@ export class HeroComponent implements AfterViewInit {
       onComplete: () => this.animateLine(path, length)
     });
 
-    // Use fromTo for explicit state control and better performance
+    // Use linear easing ('none') for perfectly smooth line drawing
     tl.fromTo(path, 
       { strokeDashoffset: length, autoAlpha: 0 },
       { 
         strokeDashoffset: 0, 
         autoAlpha: 0.15, 
         duration: duration, 
-        ease: 'power1.inOut' 
+        ease: 'none' 
       }
     )
-    .to(path, { autoAlpha: 0, duration: 1 });
+    .to(path, { autoAlpha: 0, duration: 1, ease: 'power1.inOut' });
   }
 }
