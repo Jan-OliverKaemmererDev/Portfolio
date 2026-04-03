@@ -1,26 +1,15 @@
 @if (isVisible) {
   <div class="overlay">
-    <div class="loader_main">
-      
-      <!-- Linker Name -->
-      <div class="name_mask left_mask">
-        <div class="name">Jan-Oliver</div>
+    <div class="loader_content">
+      <svg class="bracket bracket_l" viewBox="0 0 50 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M40 10 L10 30 L40 50" stroke="#3DCFB6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="name_container">
+        <span class="name_text">Jan-Oliver Kämmerer</span>
       </div>
-
-      <!-- Zentrales Logo -->
-      <div class="logo_vessel">
-        <!-- ViewBox startet jetzt bei 30 und endet bei 110 (Breite 80) -->
-        <svg class="logo_svg" viewBox="30 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="bracket bracket_l" d="M55 10 L30 30 L55 50" stroke="#22B29C" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
-          <path class="bracket bracket_r" d="M85 10 L110 30 L85 50" stroke="#22B29C" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
-        </svg>
-      </div>
-
-      <!-- Rechter Name -->
-      <div class="name_mask right_mask">
-        <div class="name">Kämmerer</div>
-      </div>
-
+      <svg class="bracket bracket_r" viewBox="0 0 50 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10 L40 30 L10 50" stroke="#3DCFB6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
     </div>
   </div>
 }
