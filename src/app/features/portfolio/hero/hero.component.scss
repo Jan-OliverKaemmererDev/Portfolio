@@ -271,8 +271,8 @@ section {
 .hero_marquee {
   position: absolute;
   bottom: 54px;
-  left: 0;
-  right: 0;
+  left: -5%;
+  width: 110%;
   z-index: 20;
   display: flex;
   align-items: center;

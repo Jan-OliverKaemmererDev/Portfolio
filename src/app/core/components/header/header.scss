@@ -147,7 +147,9 @@ header {
 
     &:hover {
       transform: scale(1.05);
-      .logo_text { color: $color-accent; }
+      .logo_text { 
+        -webkit-text-fill-color: white;
+      }
       .bracket_path { stroke: white; }
     }
 
@@ -155,9 +157,19 @@ header {
       font-family: 'Karla', sans-serif;
       font-size: 32px;
       font-weight: 700;
-      color: white;
       line-height: 1;
-      transition: color $defaultDuration ease;
+      transition: all $defaultDuration ease;
+
+      background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
 
       @media (max-width: 800px) {
         font-size: 24px;
