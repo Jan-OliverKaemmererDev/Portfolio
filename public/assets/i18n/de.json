@@ -18,15 +18,15 @@
   "ABOUT-ME": {
     "WHO_I_AM": "Wer Ich bin",
     "TITLE": "Über mich",
-    "INTRO": "Hey, ich bin Jan-Oliver. Ich bin ein passionierter Frontend Entwickler mit einem Auge für Design und technische Exzellenz. Es fasziniert mich, wie Technologie moderne Erlebnisse prägt.",
-    "LEARNING": "Kontinuierliche Optimierung: Das „1 % besser jeden Tag“-Mindset ist mein Standard. Ich brenne darauf, Systeme zu verfeinern, Codebases zu optimieren und technisch am Puls der Zeit zu bleiben.",
-    "APPROACH": "Explorative Neugier: Stillstand ist für mich keine Option. Ich suche gezielt nach neuen Herausforderungen und Technologien, um über den Tellerrand hinauszublicken.",
+    "INTRO": "Hey, ich bin Jan-Oliver. Als Frontend-Entwickler mit der Denkweise eines Architekten verbinde ich visionäres Design mit strategischer Präzision. Mein Fokus liegt auf kontinuierlicher Optimierung und technischer Exzellenz, um hocheffiziente und logisch durchdachte Web-Lösungen zu schaffen. Mich treibt die Neugier an, komplexe Herausforderungen durch moderne Technologien in zukunftssichere, intuitive Erlebnisse zu verwandeln.",
+    "LEARNING": "Kontinuierliche Optimierung: Ich analysiere Systeme rational, um Code-Strukturen und Workflows ständig auf maximale Effizienz zu trimmen. Proaktiv erkenne ich Verbesserungspotenziale und entwickle daraus langlebige, technische Lösungen.",
+    "APPROACH": "Explorative Neugier: Getrieben von einer starken Intuition erforsche ich ständig neue Web-Technologien, um innovative und intuitive User Experiences zu gestalten. Ich liebe es, tief in komplexe Problemstellungen einzutauchen und durch meine Neugier zukunftssichere Lösungen zu finden.",
     "LOCATION": " Standort: Offen für Remote-Arbeit."
   },
   "SKILLS": {
     "SUB_TITLE": "Technologien",
     "TITLE": "Fähigkeiten",
-    "DESCRIPTION": "Technologien sind für mich ein Werkzeugkasten zur Lösung echter Probleme. Ich arbeite gern mit modernen Frontend-Tools und möchte verstehen, wie Dinge wirklich funktionieren. Die schnelle Entwicklung im Web motiviert mich, ständig dazuzulernen. In meiner Weiterentwicklung habe ich gelernt, sauberen und wartbaren Code in agilen Teams zu schreiben. Ich sehe mich als lernhungriges Teammitglied, das technische Lösungen immer im Kontext des Geschäftswerts betrachtet.",
+    "DESCRIPTION": "Technologien sind für mich strategische Instrumente, um komplexe Herausforderungen effizient zu lösen. Ich arbeite nicht nur mit modernen Frontend-Tools, sondern strebe danach, die zugrunde liegenden Architekturen und Logiken tiefgreifend zu verstehen. Die Dynamik des Webs motiviert mich zu einer kontinuierlichen Optimierung meiner Fähigkeiten und Arbeitsweisen. In agilen Teams bringe ich meine Stärke für strukturierten, wartbaren Code ein und bewahre auch in intensiven Phasen einen kühlen Kopf. Ich sehe mich als analytisches Teammitglied, das technische Lösungen immer im Kontext von Effizienz und messbarem Geschäftswert betrachtet.",
     "CTA": "Du suchst eine bestimmte",
     "CTA_SKILL": "Technologie?",
     "CONTACT_ME": "Kontaktiere mich! Ich erweitere mein Skillset kontinuierlich.",
@@ -142,15 +142,12 @@
     },
     "SECTION_2": {
       "TITLE": "2. Hosting",
-      "P_1": "Wir hosten die Inhalte unserer Website bei folgenden Anbietern:",
-      "SUB_1": "IONOS",
-      "P_2": "Anbieter ist die IONOS SE, Elgendorfer Str. 57, 56410 Montabaur (nachfolgend IONOS). Wenn Sie unsere Website besuchen, erfasst IONOS verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von IONOS: https://www.ionos.de/terms-gtc/terms-privacy.",
-      "P_3": "Die Verwendung von IONOS erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website.",
-      "SUB_2": "Externes Hosting durch Vercel",
-      "P_4": "Diese Website wird zusätzlich extern gehostet durch: Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA. Die personenbezogenen Daten, die auf dieser Website erfasst werden (v. a. IP-Adressen, Meta- und Kommunikationsdaten), werden auf den Servern von Vercel gespeichert.",
-      "P_5": "Das Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren und effizienten Bereitstellung unseres Online-Angebots (Art. 6 Abs. 1 lit. f DSGVO).",
-      "SUB_3": "Auftragsverarbeitung",
-      "P_6": "Wir haben Verträge über Auftragsverarbeitung (AVV) mit den oben genannten Anbietern geschlossen. Dies gewährleistet, dass diese die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeiten."
+      "P_1": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+      "SUB_1": "Netcup",
+      "P_2": "Anbieter ist die netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe (nachfolgend Netcup). Wenn Sie unsere Website besuchen, erfasst Netcup verschiedene Logfiles inklusive Ihrer IP-Adressen. Details entnehmen Sie der Datenschutzerklärung von Netcup: https://www.netcup.de/kontakt/datenschutzerklaerung.php.",
+      "P_3": "Die Verwendung von Netcup erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website.",
+      "SUB_2": "Auftragsverarbeitung",
+      "P_4": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit dem oben genannten Anbieter geschlossen. Dies gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet."
     },
     "SECTION_3": {
       "TITLE": "3. Allgemeine Hinweise und Pflichtinformationen",

@@ -105,15 +105,15 @@ export class FeaturedProjects implements AfterViewInit, OnDestroy {
       technologies: this.buildTech(['HTML', 'CSS', 'JavaScript', 'Firebase']),
       previewImage: 'assets/img/featured-projects/preview-projects/join.png',
       githubLink: 'https://github.com/Jan-OliverKaemmererDev/join',
-      liveTestLink: 'https://join.jan-oliver-kaemmerer.dev',
+      liveTestLink: 'https://join.jan-oliver-kaemmerer.de/',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.JOIN.DESCRIPTION',
     },
     {
       name: 'El Pollo Loco',
       technologies: this.buildTech(['HTML', 'CSS', 'JavaScript']),
       previewImage: 'assets/img/featured-projects/preview-projects/el-pollo-loco.png',
-      githubLink: 'https://github.com/Jan-OliverKaemmererDev/el_pollo_loco',
-      liveTestLink: 'https://el-pollo-loco.jan-oliver-kaemmerer.dev',
+      githubLink: 'https://github.com/Jan-OliverKaemmererDev/El-Pollo-Loco',
+      liveTestLink: 'https://el-pollo-loco.jan-oliver-kaemmerer.de',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.EL_POLLO_LOCO.DESCRIPTION',
     },
     {

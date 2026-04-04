@@ -29,7 +29,7 @@ export class ContactFormComponent implements AfterViewInit, OnDestroy {
   };
 
   post = {
-    endPoint: '/api/sendMail',
+    endPoint: 'php/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

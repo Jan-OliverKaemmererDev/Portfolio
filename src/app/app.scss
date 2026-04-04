@@ -1,0 +1,19 @@
+@use '../styles/variables' as *;
+
+.cursor-glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle, 
+    rgba($color-accent, 0.15) 0%, 
+    rgba($color-accent, 0.05) 30%, 
+    rgba($color-accent, 0) 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  filter: blur(15px);
+  will-change: left, top;
+}

@@ -18,15 +18,15 @@
   "ABOUT-ME": {
     "WHO_I_AM": "Who I am",
     "TITLE": "About me",
-    "INTRO": "Hey, I’m Jan-Oliver. I am a passionate frontend developer with an eye for design and technical excellence. I am fascinated by how technology shapes modern experiences.",
-    "LEARNING": "Continuous Optimization: I strongly believe in the “1% better every day” mindset. I am driven to refine systems, optimize codebases, and stay at the forefront of new technologies.",
-    "APPROACH": "Explorative Curiosity: For me, standing still is not an option. I actively seek out new challenges and technologies to push beyond my comfort zone and broaden my perspective.",
+    "INTRO": "Hey, I'm Jan-Oliver. As a frontend developer with an Architect mindset, I combine visionary design with strategic precision. My focus is on continuous optimization and technical excellence to create highly efficient and logically structured web solutions. I am driven by curiosity to transform complex challenges into future-proof, intuitive experiences using modern technologies.",
+    "LEARNING": "Continuous Optimization: I rationally analyze systems to constantly refine code structures and workflows for peak efficiency. I proactively identify potential improvements and translate them into durable technical solutions.",
+    "APPROACH": "Explorative Curiosity: Driven by strong intuition, I constantly explore emerging web technologies to create innovative and intuitive user experiences. I thrive on diving deep into complex challenges and using my curiosity to find future-proof solutions.",
     "LOCATION": "Location: Open to remote work."
   },
   "SKILLS": {
     "SUB_TITLE": "Technologies",
     "TITLE": "Skill Set",
-    "DESCRIPTION": "Technology is my toolbox for solving real problems. I enjoy working with modern front-end tools and understanding how things work under the hood. The fast pace of the web excites me — new frameworks and best practices are a constant opportunity to grow. Through my intensive training, I’ve learned to write clean, maintainable code within agile team environments. I’m a fast learner who always considers the business value behind every technical solution.",
+    "DESCRIPTION": "For me, technologies are strategic tools to solve complex challenges efficiently. I don’t just work with modern frontend tools; I strive for a deep understanding of the underlying architectures and logic. The dynamic nature of the web motivates me to continuously optimize my skills and workflows. Within agile teams, I contribute my strength for structured, maintainable code and remain composed even during intensive phases. I see myself as an analytical team member who always views technical solutions in the context of efficiency and measurable business value.",
     "CTA": "Looking for something",
     "CTA_SKILL": "specific?",
     "CONTACT_ME": "Contact me! I’m always expanding my stack.",
@@ -142,15 +142,12 @@
     },
     "SECTION_2": {
       "TITLE": "2. Hosting",
-      "P_1": "We host the content of our website with the following providers:",
-      "SUB_1": "IONOS",
-      "P_2": "The provider is IONOS SE, Elgendorfer Str. 57, 56410 Montabaur (hereinafter IONOS). When you visit our website, IONOS collects various log files including your IP addresses. Details can be found in the IONOS privacy policy: https://www.ionos.de/terms-gtc/terms-privacy.",
-      "P_3": "IONOS is used on the basis of Art. 6 Para. 1 lit. f GDPR. We have a legitimate interest in the most reliable representation of our website.",
-      "SUB_2": "External Hosting by Vercel",
-      "P_4": "This website is additionally hosted externally by: Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, USA. The personal data collected on this website (primarily IP addresses, meta and communication data) are stored on Vercel's servers.",
-      "P_5": "Hosting is carried out for the purpose of fulfilling the contract with our potential customers (Art. 6 Para. 1 lit. b GDPR) and in the interest of a secure and efficient provision of our online offer (Art. 6 Para. 1 lit. f GDPR).",
-      "SUB_3": "Order Processing",
-      "P_6": "We have concluded contracts for order processing (AVV) with the aforementioned providers. This ensures that they process the personal data of our website visitors only according to our instructions and in compliance with the GDPR."
+      "P_1": "We host the content of our website with the following provider:",
+      "SUB_1": "Netcup",
+      "P_2": "The provider is netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe (hereinafter Netcup). When you visit our website, Netcup collects various log files including your IP addresses. Details can be found in the Netcup privacy policy: https://www.netcup.de/kontakt/datenschutzerklaerung.php.",
+      "P_3": "Netcup is used on the basis of Art. 6 Para. 1 lit. f GDPR. We have a legitimate interest in the most reliable representation of our website.",
+      "SUB_2": "Order Processing",
+      "P_4": "We have concluded a contract for order processing (AVV) with the aforementioned provider. This ensures that they process the personal data of our website visitors only according to our instructions and in compliance with the GDPR."
     },
     "SECTION_3": {
       "TITLE": "3. General Information and Mandatory Information",

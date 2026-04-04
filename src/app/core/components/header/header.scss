@@ -257,8 +257,8 @@ header {
 }
 
 @keyframes textShimmer {
-  0% { background-position: 200% center; }
-  100% { background-position: -200% center; }
+  0% { background-position: 100% center; }
+  100% { background-position: 0% center; }
 }
 
 .hover_shadow {
@@ -290,12 +290,12 @@ header {
     background: linear-gradient(
       120deg,
       $color-accent 0%,
-      $color-accent 40%,
+      $color-accent 45%,
       #ffffff 50%,
-      $color-accent 60%,
+      $color-accent 55%,
       $color-accent 100%
     );
-    background-size: 200% auto;
+    background-size: 300% auto;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
