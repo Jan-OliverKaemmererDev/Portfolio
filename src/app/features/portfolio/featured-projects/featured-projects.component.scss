@@ -283,13 +283,28 @@ section {
 }
 
 .dialog_card {
-  @include glass-panel(56px, 40px);
+  @include glass-panel(0, 40px);
   position: relative;
   width: 100%;
   max-width: 1200px;
   max-height: 90vh;
-  overflow-y: auto;
+  overflow: hidden;
   animation: dialogSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @media (max-width: 480px) {
+    border-radius: 20px;
+    width: 100%;
+  }
+}
+
+.dialog_card_inner {
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.dialog_card_content_wrapper {
+  position: relative;
+  padding: 56px;
 
   @media (max-width: 900px) { 
     padding: 80px 24px 32px; 
@@ -297,8 +312,6 @@ section {
 
   @media (max-width: 480px) {
     padding: 80px 16px 24px;
-    border-radius: 20px;
-    width: 100%;
   }
 }
 

@@ -71,13 +71,9 @@ section {
     h2 {
       font-family: $font-fira;
       font-weight: 400;
-      font-size: 2.5rem;
+      font-size: clamp(1.75rem, 4vw, 2.5rem); // Fluid scaling
       line-height: 1;
       color: $color-light-gray;
-
-      @media (max-width: 800px) { 
-        font-size: 1.75rem; 
-      }
 
       @media (max-width: 450px) { 
         font-size: 1.25rem; 
@@ -86,10 +82,12 @@ section {
 
     h1 {
       font-weight: 700;
-      font-size: 8.75rem;
+      font-size: clamp(4rem, 11vw, 8.75rem); // Fluid scaling
       line-height: 1;
       letter-spacing: -0.02rem;
       text-align: center;
+      white-space: normal; // Allow wrapping on very small screens or let browser decide
+      word-break: keep-all; // Try to keep Jan-Oliver together
 
       background: linear-gradient(
         to bottom,
@@ -103,17 +101,12 @@ section {
       filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
 
       @media (max-width: 1200px) {
-        font-size: 6rem;
-      }
-
-      @media (max-width: 800px) { 
-        font-size: 4rem;
+        // clamp handles the middle range now
       }
 
       @media (max-width: 450px) { 
         font-size: 3rem;
       }
-
     }
 
     .hero_title_layout {
@@ -163,7 +156,7 @@ section {
   @include flex-column(16px, flex-start, center);
   pointer-events: auto;
 
-  @media (max-width: 800px) { 
+  @media (max-width: 1024px) { 
     left: 16px; 
   }
 
@@ -202,7 +195,7 @@ section {
   @include flex-column(16px, center, center);
   pointer-events: auto;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     height: 50vh;
     right: 16px;
   }
@@ -247,15 +240,17 @@ section {
 
       .hover_icon { opacity: 0; }
 
-      &:hover {
-        transform: scale(1.1);
+      @media (hover: hover) {
+        &:hover {
+          transform: scale(1.1);
 
-        .main_icon { 
-          opacity: 0; 
-        }
+          .main_icon { 
+            opacity: 0; 
+          }
 
-        .hover_icon { 
-          opacity: 1; 
+          .hover_icon { 
+            opacity: 1; 
+          }
         }
       }
     }
@@ -282,6 +277,8 @@ section {
   background: linear-gradient(90deg, rgba(#08463B, 0.8) 0%, rgba($color-bg-dark, 0.9) 50%, rgba(#08463B, 0.8) 100%);
   border: 1px solid rgba($color-accent, 0.2);
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, black 5%, black 95%, transparent 100%);
 
   @media (max-width: 450px) {
     bottom: 32px;
@@ -292,6 +289,10 @@ section {
     display: flex;
     width: max-content;
     animation: marqueeAnimation 30s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
   }
 
   .marquee_content {
@@ -336,9 +337,9 @@ section {
 
 @keyframes marqueeAnimation {
   0% { 
-    transform: translateX(0); 
+    transform: translateX(0) translateZ(0); 
   }
   100% { 
-    transform: translateX(-50%); 
+    transform: translateX(-33.333%) translateZ(0); 
   }
 }
