@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $email = filter_var($data["email"], FILTER_SANITIZE_EMAIL);
         $message = strip_tags($data["message"]);
 
-        $recipient = "jowieja22@gmail.com"; 
+        $recipient = "info@jan-oliver-kaemmerer.de"; 
         $subject = "Neue Kontaktanfrage von $name";
         
         $headers = "From: contact@jan-oliver-kaemmerer.de\r\n"; // Replace with your domain mail if needed

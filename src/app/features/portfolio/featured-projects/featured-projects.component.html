@@ -37,12 +37,13 @@
 
       <div class="featured_projects_preview_container" [class.visible]="hoveredIndex !== null">
         <div class="preview_decoration_wrapper" [style.top.px]="hoveredIndex !== null ? hoveredIndex * 65 : 0">
-          @if (hoveredIndex !== null) {
-          <div class="preview_decoration_bg"></div>
+          <div class="preview_decoration_bg" [class.active]="hoveredIndex !== null"></div>
           <div class="featured_project_preview_box">
-            <img [src]="projects[hoveredIndex].previewImage" [alt]="projects[hoveredIndex].name">
+            @for (project of projects; track $index) {
+              <img [src]="project.previewImage" [alt]="project.name"
+                   [class.active]="hoveredIndex === $index">
+            }
           </div>
-          }
         </div>
       </div>
     </div>

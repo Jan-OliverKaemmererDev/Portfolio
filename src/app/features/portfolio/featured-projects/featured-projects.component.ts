@@ -103,7 +103,7 @@ export class FeaturedProjects implements AfterViewInit, OnDestroy {
     {
       name: 'Join',
       technologies: this.buildTech(['HTML', 'CSS', 'JavaScript', 'Firebase']),
-      previewImage: 'assets/img/featured-projects/preview-projects/join.png',
+      previewImage: 'assets/img/featured-projects/preview-projects/join.webp',
       githubLink: 'https://github.com/Jan-OliverKaemmererDev/join',
       liveTestLink: 'https://join.jan-oliver-kaemmerer.de/',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.JOIN.DESCRIPTION',
@@ -111,7 +111,7 @@ export class FeaturedProjects implements AfterViewInit, OnDestroy {
     {
       name: 'El Pollo Loco',
       technologies: this.buildTech(['HTML', 'CSS', 'JavaScript']),
-      previewImage: 'assets/img/featured-projects/preview-projects/el-pollo-loco.png',
+      previewImage: 'assets/img/featured-projects/preview-projects/el-pollo-loco.webp',
       githubLink: 'https://github.com/Jan-OliverKaemmererDev/El-Pollo-Loco',
       liveTestLink: 'https://el-pollo-loco.jan-oliver-kaemmerer.de',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.EL_POLLO_LOCO.DESCRIPTION',
@@ -119,7 +119,7 @@ export class FeaturedProjects implements AfterViewInit, OnDestroy {
     {
       name: 'Poll App',
       technologies: this.buildTech(['Angular', 'HTML', 'SCSS', 'TypeScript', 'Supabase']),
-      previewImage: 'assets/img/featured-projects/preview-projects/poll-app.png',
+      previewImage: 'assets/img/featured-projects/preview-projects/poll-app.webp',
       githubLink: '',
       liveTestLink: '',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.POLL_APP.DESCRIPTION',
