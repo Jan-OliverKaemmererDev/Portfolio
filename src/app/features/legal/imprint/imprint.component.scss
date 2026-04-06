@@ -3,7 +3,7 @@
 section {
   width: 100%;
   min-height: calc(100vh - 174px);
-  min-height: calc(100dvh - 174px);
+  min-height: calc(100svh - 174px);
   padding-top: 104px;
   overflow: hidden;
   @include flex-center();

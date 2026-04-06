@@ -40,7 +40,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  min-height: 100dvh;
+  min-height: 100svh;
   background: linear-gradient(55.22deg, $color-bg-dark 36.26%, #08463B 93.28%);
   overflow: hidden;
   @include flex-center();
@@ -67,7 +67,7 @@ section {
   .hero_content {
     @include flex-center(column);
     min-height: 100vh;
-    min-height: 100dvh;
+    min-height: 100svh;
     z-index: 10;
 
     h2 {
