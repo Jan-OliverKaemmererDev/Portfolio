@@ -33,31 +33,31 @@ export class LoaderComponent implements OnInit, AfterViewInit {
     // 1. Brackets appear at the center
     tl.fromTo(brackets, 
       { scale: 0, opacity: 0 },
-      { scale: 1, opacity: 1, duration: 0.8, ease: "back.out(1.7)" }
+      { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
     )
     // 2. Name builds up (expand from center)
     .to(nameContainer, {
       width: "100%", // This will expand to fit the container or we can use max-content in CSS
-      duration: 1.2,
+      duration: 0.8,
       ease: "power3.inOut",
     })
     // 3. Nachfedern (Bounce)
     .to(brackets, {
       scale: 1.2,
-      duration: 0.2,
+      duration: 0.15,
       ease: "power2.out"
-    }, "-=0.2")
+    }, "-=0.15")
     .to(brackets, {
       scale: 1,
-      duration: 0.6,
+      duration: 0.4,
       ease: "elastic.out(1.2, 0.5)"
     })
     // 4. Exit after 0.5s
     .to(overlay, {
       y: "-100%",
-      duration: 0.8,
+      duration: 0.6,
       ease: "power4.inOut",
-      delay: 0.5,
+      delay: 0.2,
       onComplete: () => {
         this.isVisible = false;
       }

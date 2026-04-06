@@ -3,12 +3,23 @@ import { provideRouter, withInMemoryScrolling, withRouterConfig } from '@angular
 
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader, TRANSLATE_HTTP_LOADER_CONFIG } from '@ngx-translate/http-loader';
+import { Observable, of } from 'rxjs';
+
+import deTranslations from '../../public/assets/i18n/de.json';
+import enTranslations from '../../public/assets/i18n/en.json';
 
 import { routes } from './app.routes';
 
-export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader();
+export class StaticTranslateLoader implements TranslateLoader {
+  getTranslation(lang: string): Observable<any> {
+    if (lang === 'de') return of(deTranslations);
+    if (lang === 'en') return of(enTranslations);
+    return of({}); 
+  }
+}
+
+export function TranslateLoaderFactory() {
+  return new StaticTranslateLoader();
 }
 
 export const appConfig: ApplicationConfig = {
@@ -26,20 +37,13 @@ export const appConfig: ApplicationConfig = {
       })
     ),
     provideHttpClient(),
-    {
-      provide: TRANSLATE_HTTP_LOADER_CONFIG,
-      useValue: {
-        prefix: './assets/i18n/',
-        suffix: '.json',
-      },
-    },
     importProvidersFrom(
       TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
+          useFactory: TranslateLoaderFactory
         },
+        defaultLanguage: 'de',
         fallbackLang: 'en'
       })
     )
