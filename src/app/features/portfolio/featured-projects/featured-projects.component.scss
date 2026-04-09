@@ -1,8 +1,8 @@
 @use '../../../../styles/variables' as *;
 
 section {
-  @include section-setup($with-glow: true, $glow-left: true);
   overflow-x: hidden;
+  @include section-setup($with-glow: true, $glow-left: true);
 
   .featured_projects_subtitle {
     font-family: $font-fira;

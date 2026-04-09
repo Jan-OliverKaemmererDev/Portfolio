@@ -36,8 +36,8 @@ section {
   }
 
   .contact_title {
-    @include section-title-styles();
     margin-bottom: 32px;
+    @include section-title-styles();
 
     @media (max-width: 375px) {
       font-size: 2rem;
