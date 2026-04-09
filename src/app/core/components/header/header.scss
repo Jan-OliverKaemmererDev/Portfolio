@@ -274,11 +274,6 @@ header {
   }
 }
 
-@keyframes textShimmer {
-  0% { background-position: 100% center; }
-  100% { background-position: 0% center; }
-}
-
 .hover_shadow {
   display: inline-block;
   position: relative;
@@ -305,20 +300,7 @@ header {
   }
 
   &:hover {
-    background: linear-gradient(
-      120deg,
-      $color-accent 0%,
-      $color-accent 45%,
-      #ffffff 50%,
-      $color-accent 55%,
-      $color-accent 100%
-    );
-    background-size: 300% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: textShimmer 1s ease-in-out forwards;
+    @include text-shimmer($color-accent);
 
     &::after {
       opacity: 1;

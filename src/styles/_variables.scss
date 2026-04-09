@@ -146,6 +146,28 @@ $card-offset: 1.5rem;
 	}
 }
 
+@mixin text-shimmer($base-color: $color-accent) {
+	background: linear-gradient(
+		120deg,
+		$base-color 0%,
+		$base-color 45%,
+		#ffffff 50%,
+		$base-color 55%,
+		$base-color 100%
+	);
+	background-size: 300% auto;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent;
+	animation: textShimmer 1s ease-in-out forwards;
+}
+
+@keyframes textShimmer {
+	0% { background-position: 100% center; }
+	100% { background-position: 0% center; }
+}
+
 @mixin hideTapHighlightColor() {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
