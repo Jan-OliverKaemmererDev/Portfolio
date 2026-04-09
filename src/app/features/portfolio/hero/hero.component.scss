@@ -294,7 +294,6 @@ section {
   .marquee_track {
     display: flex;
     width: max-content;
-    animation: marqueeAnimation 30s linear infinite;
     will-change: transform;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
@@ -340,12 +339,4 @@ section {
     transform: translateY(4px); 
   }
 }
-
-@keyframes marqueeAnimation {
-  0% { 
-    transform: translateX(0) translateZ(0); 
-  }
-  100% { 
-    transform: translateX(-33.333%) translateZ(0); 
-  }
-}
+

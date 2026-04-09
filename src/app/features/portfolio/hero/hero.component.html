@@ -115,7 +115,7 @@
   </div>
 
   <div class="hero_marquee">
-    <div class="marquee_track">
+    <div class="marquee_track" #marqueeTrack>
       @for (i of [1, 2, 3]; track $index) {
         <div class="marquee_content" [attr.aria-hidden]="i === 3">
           @for (item of marqueeItems; track $index) {

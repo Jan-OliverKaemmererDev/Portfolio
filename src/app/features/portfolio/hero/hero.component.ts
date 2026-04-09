@@ -1,8 +1,9 @@
-import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, PLATFORM_ID, Inject } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList, PLATFORM_ID, Inject, ViewChild, OnDestroy } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from "@angular/router";
 import { gsap } from 'gsap';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-hero',
@@ -11,7 +12,7 @@ import { gsap } from 'gsap';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
-export class HeroComponent implements AfterViewInit {
+export class HeroComponent implements AfterViewInit, OnDestroy {
   marqueeItems: string[] = [
     'HERO.MARQUEE.REMOTE_WORK',
     'HERO.MARQUEE.JOB_TITLE',
@@ -20,13 +21,52 @@ export class HeroComponent implements AfterViewInit {
   ];
 
   @ViewChildren('circuitLine') circuitLines!: QueryList<ElementRef<SVGPathElement>>;
+  @ViewChild('marqueeTrack') marqueeTrack!: ElementRef<HTMLDivElement>;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object, private el: ElementRef) {}
+  private marqueeTween?: gsap.core.Tween;
+  private langSubscription?: Subscription;
+
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private el: ElementRef,
+    private translate: TranslateService
+  ) {}
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
       this.initCircuitAnimation();
+      this.initMarqueeAnimation();
+
+      // Recalculate animation on language change to account for different text lengths
+      this.langSubscription = this.translate.onLangChange.subscribe(() => {
+        setTimeout(() => this.initMarqueeAnimation(), 100);
+      });
     }
+  }
+
+  ngOnDestroy() {
+    this.langSubscription?.unsubscribe();
+    this.marqueeTween?.kill();
+  }
+
+  private initMarqueeAnimation() {
+    if (!this.marqueeTrack) return;
+
+    this.marqueeTween?.kill();
+
+    // Use a small delay to ensure the DOM is updated with translated text
+    setTimeout(() => {
+      const track = this.marqueeTrack.nativeElement;
+      
+      // We animate -33.333% because we have 3 for-loop items in the HTML
+      this.marqueeTween = gsap.to(track, {
+        xPercent: -33.333,
+        duration: 30,
+        ease: 'none',
+        repeat: -1,
+        overwrite: true
+      });
+    }, 50);
   }
 
   private initCircuitAnimation() {
