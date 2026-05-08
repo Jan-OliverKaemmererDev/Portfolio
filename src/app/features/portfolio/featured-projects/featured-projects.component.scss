@@ -151,6 +151,8 @@ section {
 }
 
 .badge_upcoming {
+  display: none;
+  /*
   padding: 8px 16px;
   background: rgba($color-accent, 0.1);
   border: 1px solid $color-accent;
@@ -158,6 +160,7 @@ section {
   border-radius: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  */
 }
 
 .dialog_title_wrapper {
@@ -166,6 +169,8 @@ section {
 }
 
 .badge_upcoming_large {
+  display: none;
+  /*
   font-family: $font-fira;
   padding: 8px 16px;
   background: $color-accent;
@@ -173,6 +178,7 @@ section {
   border-radius: 20px;
   font-weight: 700;
   animation: pulse 2s infinite;
+  */
 }
 
 .upcoming_notice {

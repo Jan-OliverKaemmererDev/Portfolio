@@ -22,6 +22,7 @@ body:has(app-privacy) {
   line-height: 1.4;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  cursor: default;
 }
 
 @font-face {
@@ -125,5 +126,32 @@ body:has(app-privacy) {
 
 a {
   text-decoration: none;
+}
+
+a, 
+a *,
+button, 
+button *,
+.btn, 
+.btn *,
+.burger_menu,
+.burger_menu *,
+.featured_project_row,
+.featured_project_row * {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+textarea {
+  cursor: text;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
   cursor: pointer;
 }

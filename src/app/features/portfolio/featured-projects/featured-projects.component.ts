@@ -120,10 +120,10 @@ export class FeaturedProjects implements AfterViewInit, OnDestroy {
       name: 'Poll App',
       technologies: this.buildTech(['Angular', 'HTML', 'SCSS', 'TypeScript', 'Supabase']),
       previewImage: 'assets/img/featured-projects/preview-projects/poll-app.webp',
-      githubLink: '',
-      liveTestLink: '',
+      githubLink: 'https://github.com/Jan-OliverKaemmererDev/PollApp',
+      liveTestLink: 'https://poll-app.jan-oliver-kaemmerer.de/',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.POLL_APP.DESCRIPTION',
-      isUpcoming: true
+      isUpcoming: false
     }
   ];
 
