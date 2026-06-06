@@ -162,6 +162,10 @@ section {
         height: 100%;
         object-fit: contain;
         transition: filter $defaultDuration ease;
+
+        &.filter-white {
+          filter: brightness(0) invert(1);
+        }
       }
     }
 
@@ -289,6 +293,10 @@ section {
 
       .skill_icon img {
         filter: drop-shadow(0 0 16px rgba($color-accent, 0.5));
+
+        &.filter-white {
+          filter: brightness(0) invert(1) drop-shadow(0 0 16px rgba($color-accent, 0.5));
+        }
       }
     }
 

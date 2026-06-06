@@ -24,7 +24,7 @@
           @for (skill of skills; track skill.name) {
           <div class="skill_item" [class.has-tooltip]="skill.name === 'Growth mindset'">
             <div class="skill_icon">
-              <img [src]="skill.icon" [alt]="skill.name">
+              <img [src]="skill.icon" [alt]="skill.name" [class.filter-white]="skill.name === 'n8n' || skill.name === 'Supabase'">
             </div>
             <span class="skill_name">{{ skill.name }}</span>
 
