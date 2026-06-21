@@ -124,6 +124,14 @@ export class FeaturedProjects implements AfterViewInit, OnDestroy {
       liveTestLink: 'https://poll-app.jan-oliver-kaemmerer.de/',
       descriptionKey: 'FEATURED-PROJECTS.PROJECTS.POLL_APP.DESCRIPTION',
       isUpcoming: false
+    },
+    {
+      name: 'DABubble',
+      technologies: this.buildTech(['Angular', 'HTML', 'SCSS', 'TypeScript', 'Firebase']),
+      previewImage: 'assets/img/featured-projects/preview-projects/dabubble.webp',
+      githubLink: 'https://github.com/Jan-OliverKaemmererDev/DABubble',
+      liveTestLink: 'https://dabubble.jan-oliver-kaemmerer.de/',
+      descriptionKey: 'FEATURED-PROJECTS.PROJECTS.DABUBBLE.DESCRIPTION',
     }
   ];
 

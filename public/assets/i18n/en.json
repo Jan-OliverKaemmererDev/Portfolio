@@ -55,6 +55,9 @@
       },
       "POLL_APP": {
         "DESCRIPTION": "Poll App is an Angular app for creating, sharing, and evaluating surveys in real time—with Supabase as the backend for authentication and data storage."
+      },
+      "DABUBBLE": {
+        "DESCRIPTION": "A business chat application for real-time communication in channels and direct messages, inspired by Slack, WhatsApp, and Discord."
       }
     }
   },
